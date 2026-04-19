@@ -132,10 +132,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Add animation classes to elements
 document.addEventListener('DOMContentLoaded', () => {
-    // About section animations
-    // const aboutInfo = document.querySelector('.about-info');
-    // const aboutStats = document.querySelector('.about-stats');
-    // const aboutSkills = document.querySelector('.about-skills');
+   
     
     if (aboutInfo) aboutInfo.classList.add('fade-in');
     if (aboutStats) aboutStats.classList.add('slide-in-left');
@@ -153,12 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.style.animationDelay = `${index * 0.1}s`;
     });
 
-    // Contact animations
-    // const contactInfo = document.querySelector('.contact-info');
-    // const contactForm = document.querySelector('.contact-form');
-    
-    // if (contactInfo) contactInfo.classList.add('slide-in-left');
-    // if (contactForm) contactForm.classList.add('slide-in-right');
+  
 if (contactInfo) contactInfo.classList.add('slide-in-left');
 if (contactForm) contactForm.classList.add('slide-in-right');
 
