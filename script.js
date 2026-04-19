@@ -635,7 +635,7 @@ window.addEventListener('load', () => {
 });
 
 // ===== INTERSECTION OBSERVER FOR FADE IN EFFECTS =====
-const fadeElements = document.querySelectorAll('section, .service-card, .portfolio-item, .skill-item, .contact-item');
+const fadeElements = document.querySelectorAll('section, .service-card, .portfolio-item, .skill-item, .contact-item, .profile-card');
 
 const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
