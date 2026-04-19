@@ -334,7 +334,7 @@ function showNotification(message, type) {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: ${type === 'success' ? '#00ff88' : '#ff4757'};
+        background: ${type === 'success' ? '#00b4d8' : '#ff4757'};
         color: ${type === 'success' ? '#000000' : '#ffffff'};
         padding: 15px 20px;
         border-radius: 10px;
@@ -399,7 +399,7 @@ const floatingIcons = document.querySelectorAll('.floating-icon');
 floatingIcons.forEach((icon, index) => {
     icon.addEventListener('mouseenter', () => {
         icon.style.transform = 'scale(1.2) translateY(-10px)';
-        icon.style.background = 'rgba(0, 255, 136, 0.3)';
+        icon.style.background = 'rgba(0, 180, 216, 0.3)';
         
         // Show tooltip
         const tooltip = document.createElement('div');
@@ -410,7 +410,7 @@ floatingIcons.forEach((icon, index) => {
             bottom: -35px;
             left: 50%;
             transform: translateX(-50%);
-            background: #00ff88;
+            background: #00b4d8;
             color: #000000;
             padding: 5px 10px;
             border-radius: 5px;
@@ -424,7 +424,7 @@ floatingIcons.forEach((icon, index) => {
     
     icon.addEventListener('mouseleave', () => {
         icon.style.transform = '';
-        icon.style.background = 'rgba(0, 255, 136, 0.1)';
+        icon.style.background = 'rgba(0, 180, 216, 0.1)';
         
         // Remove tooltip
         const tooltip = icon.querySelector('.tech-tooltip');
@@ -519,7 +519,7 @@ document.querySelectorAll('.form-group input, .form-group textarea').forEach(inp
             label.style.top = '-10px';
             label.style.left = '15px';
             label.style.fontSize = '12px';
-            label.style.color = '#00ff88';
+            label.style.color = '#00b4d8';
             label.style.background = '#0a0a0a';
             label.style.padding = '0 8px';
         }
@@ -581,15 +581,15 @@ window.addEventListener('load', () => {
     const loaderContent = loader.querySelector('.loader-content');
     loaderContent.style.cssText = `
         text-align: center;
-        color: #00ff88;
+        color: #00b4d8;
     `;
     
     const loaderCircle = loader.querySelector('.loader-circle');
     loaderCircle.style.cssText = `
         width: 50px;
         height: 50px;
-        border: 3px solid rgba(0, 255, 136, 0.3);
-        border-top: 3px solid #00ff88;
+        border: 3px solid rgba(0, 180, 216, 0.3);
+        border-top: 3px solid #00b4d8;
         border-radius: 50%;
         animation: spin 1s linear infinite;
         margin: 0 auto 20px;
