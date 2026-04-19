@@ -133,6 +133,11 @@ const observer = new IntersectionObserver((entries) => {
 // Add animation classes to elements
 document.addEventListener('DOMContentLoaded', () => {
    
+    const aboutInfo = document.querySelector('.about-info');
+    const aboutStats = document.querySelector('.about-stats');
+    const aboutSkills = document.querySelector('.about-skills');
+    const contactInfo = document.querySelector('.contact-info');
+    const contactForm = document.querySelector('.contact-form');
     
     if (aboutInfo) aboutInfo.classList.add('fade-in');
     if (aboutStats) aboutStats.classList.add('slide-in-left');
@@ -363,7 +368,9 @@ function showNotification(message, type) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
