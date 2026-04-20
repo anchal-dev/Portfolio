@@ -523,10 +523,9 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 60px;
-    align-items: start;
 }
 
 .about-text {
@@ -550,7 +549,7 @@ section {
 
 .about-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -587,6 +586,12 @@ section {
     font-size: 28px;
     color: #00b4d8;
     margin-bottom: 30px;
+}
+
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .skills-grid {

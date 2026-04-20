@@ -159,11 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
 if (contactInfo) contactInfo.classList.add('slide-in-left');
 if (contactForm) contactForm.classList.add('slide-in-right');
 
-
-
-
-    // Observe all animated elements
-    animatedElements.forEach(el => observer.observe(el));
+    // Re-select animated elements since classes were dynamically added
+    const updatedAnimatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+    updatedAnimatedElements.forEach(el => observer.observe(el));
 });
 
 // ===== SKILLS PROGRESS BARS =====
